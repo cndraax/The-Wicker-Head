@@ -1,0 +1,204 @@
+/* Reset dasar */
+* {
+  font-family: "Impact", "Lucida Bright", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #0a0a0a; /* lebih gelap */
+  color: #eee;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(90deg, #000, #111 50%, #000);
+  padding: 15px 30px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  border-bottom: 2px solid #a00; /* merah darah */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.8);
+}
+
+header .logo {
+  font-size: 26px;
+  font-weight: bold;
+  color: #a00; /* merah darah */
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  ;
+}
+
+header nav a {
+  color: #eee;
+  margin-left: 20px;
+  text-decoration: none;
+  transition: 0.3s;
+  font-weight: bold;
+}
+
+header nav a:hover {
+  color: #a00;
+  text-shadow: 0 0 8px #a00;
+}
+
+/* Hero */
+#hero {
+  text-align: center;
+  padding: 100px 50px;
+  background: #111 url("background.jpg") center/cover no-repeat;
+  border-bottom: 3px solid #a00;
+}
+
+#hero h1 {
+  font-size: 52px;
+  margin-bottom: 20px;
+  color: #f4f4f4;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  text-shadow: 3px 3px 10px #a00;
+}
+
+#hero img {
+  max-width: 180px;
+  margin: 20px 0;
+  border-radius: 0;
+  border: 4px solid #a00;
+  padding: 5px;
+  background: #000;
+  box-shadow: 0 0 25px #a00;
+}
+
+#hero p {
+  margin-bottom: 20px;
+  font-size: 20px;
+  color: #ccc;
+  font-style: italic;
+}
+
+/* Tombol */
+.btn {
+  display: inline-block;
+  background: #a00;
+  color: #fff;
+  padding: 12px 24px;
+  text-decoration: none;
+  border-radius: 3px;
+  font-weight: bold;
+  transition: 0.3s;
+  text-transform: uppercase;
+  box-shadow: 0 0 10px #a00;
+}
+
+.btn:hover {
+  background: #ff0000;
+  box-shadow: 0 0 20px #ff0000;
+}
+
+/* Section umum */
+section {
+  padding: 60px 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+section h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: rgba(255, 0, 0, 0.811);
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 8px #000000;
+}
+
+/* Music */
+.music-item {
+  text-align: center;
+}
+
+.music-item img {
+  max-width: 220px;
+  border: 3px solid #a00;
+  margin-bottom: 10px;
+  box-shadow: 0 0 15px #a00;
+}
+
+/* Personil */
+.personil {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  text-align: center;
+}
+
+.personil img {
+  width: 100%;
+  max-width: 180px;
+  border-radius: 0; /* kotak biar lebih garang */
+  margin-bottom: 10px;
+  border: 3px solid #a00;
+  box-shadow: 0 0 15px #a00;
+}
+
+.personil h3 {
+  margin-top: 5px;
+  font-size: 18px;
+  color: #fff;
+  text-shadow: 1px 1px 5px #a00;
+}
+
+/* Contact form */
+form {
+  display: grid;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 12px;
+  background: #1a1a1a;
+  border: 1px solid #a00;
+  color: #eee;
+  border-radius: 3px;
+  font-size: 14px;
+}
+
+form textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+form button {
+  background: #a00;
+  border: none;
+  padding: 12px;
+  cursor: pointer;
+  font-weight: bold;
+  color: #fff;
+  border-radius: 3px;
+  transition: 0.3s;
+  text-transform: uppercase;
+}
+
+form button:hover {
+  background: #ff0000;
+  box-shadow: 0 0 15px #ff0000;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #000;
+  color: #777;
+  margin-top: 40px;
+  border-top: 2px solid #a00;
+}
